@@ -80,11 +80,11 @@ Expected output:
 
 ```
 Fee AMM pool reserves (raw):
-  reserveUserToken     : <raw amount>
-  reserveValidatorToken: <raw amount>
+  reserveUserToken     : 0
+  reserveValidatorToken: 100000000
 
 Fee AMM pool reserves (formatted, 6 decimals):
-  user token     : 100.0
+  user token     : 0.0
   validator token: 100.0
 ```
 

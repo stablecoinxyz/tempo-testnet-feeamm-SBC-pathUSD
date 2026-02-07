@@ -113,6 +113,28 @@ await client.token.transferSync({
 })
 ```
 
+## Step 4: Query Current Pool Reserves
+
+After transactions have flowed through the pool, check the updated reserves to see how the AMM balances have shifted:
+
+```bash
+node check-feeamm-pool.js
+```
+
+Example output (your numbers will vary):
+
+```
+Fee AMM pool reserves (raw):
+  reserveUserToken     : 16012
+  reserveValidatorToken: 99984045
+
+Fee AMM pool reserves (formatted, 6 decimals):
+  user token     : 0.016012
+  validator token: 99.984045
+```
+
+The user token reserve is no longer zero — the protocol swapped SBC into the pool to cover gas fees from the Step 3 transaction.
+
 ## Project Structure
 
 ```

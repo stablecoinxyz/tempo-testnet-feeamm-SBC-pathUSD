@@ -1,9 +1,10 @@
+import 'dotenv/config'
 import { createWalletClient, http } from 'viem'
 import { privateKeyToAccount } from 'viem/accounts'
 import { tempoModerato } from 'viem/chains'
 import { tempoActions } from 'viem/tempo'
 
-export const account = privateKeyToAccount('YOUR_PRIVATE_KEY')
+export const account = privateKeyToAccount(process.env.PRIVATE_KEY)
 
 export const chain = tempoModerato.extend({
   // default fee token (pathUSD) for all txs unless overridden

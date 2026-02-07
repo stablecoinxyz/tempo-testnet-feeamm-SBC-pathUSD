@@ -13,7 +13,7 @@ Tempo testnet scripts for interacting with Fee AMM pools using Viem's Tempo exte
 ## Running Scripts
 
 ```bash
-npm install              # install dependencies (viem)
+npm install              # install dependencies (viem, dotenv)
 node check-feeamm-pool.js   # query pool reserves
 node mint-feeamm.js          # mint 100 pathUSD liquidity into AMM
 node test-fee-in-my-token.js # transfer pathUSD paying gas in SBC token
@@ -45,4 +45,4 @@ Both tokens use 6 decimals. Use `parseUnits(value, 6)` and `formatUnits(value, 6
 
 ## Private Key Setup
 
-`viem.config.js` requires replacing `'YOUR_PRIVATE_KEY'` with an actual private key (hex string with `0x` prefix) before any script will work.
+The private key is loaded from a `.env` file via dotenv. Copy `.env.example` to `.env` and set `PRIVATE_KEY` to your hex key (with `0x` prefix). The `.env` file is gitignored.

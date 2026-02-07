@@ -25,10 +25,16 @@ cd tempo-testnet-feeamm-SBC-pathUSD
 npm install
 ```
 
-Open `viem.config.js` and replace `'YOUR_PRIVATE_KEY'` with your account's private key:
+Copy `.env` and add your private key:
 
-```js
-export const account = privateKeyToAccount('0xYOUR_PRIVATE_KEY_HERE')
+```bash
+cp .env.example .env
+```
+
+Then edit `.env` with your actual key:
+
+```
+PRIVATE_KEY=0xYOUR_PRIVATE_KEY_HERE
 ```
 
 Then update the token address constants in the scripts to match your own stablecoin. In each script, replace the `USER_TOKEN` / `userToken` / `MY_TOKEN` address with your token's address:

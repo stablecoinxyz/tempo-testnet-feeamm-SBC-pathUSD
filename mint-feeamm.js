@@ -14,7 +14,7 @@ async function main() {
     feeToken: pathUSD,
   })
 
-  console.log('Liquidity minted:', liquidity.toString())
+  console.log('Liquidity minted to SBC/pathUSD FeeAMM pool')
   console.log('Tx hash:', receipt.transactionHash)
 }
 

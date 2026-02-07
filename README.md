@@ -61,7 +61,7 @@ node mint-feeamm.js
 Expected output:
 
 ```
-Liquidity minted: <LP token amount>
+Liquidity minted to SBC/pathUSD FeeAMM pool
 Tx hash: 0x...
 ```
 
@@ -75,7 +75,7 @@ Verify that the pool has been funded and see the current reserve balances:
 node check-feeamm-pool.js
 ```
 
-Expected output:
+Expected output (if minted initial liquidity to a new Fee AMM pool):
 
 ```
 Fee AMM pool reserves (raw):

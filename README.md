@@ -13,7 +13,7 @@ For this to work, someone needs to seed the AMM pool with initial liquidity — 
 - Node.js (v18+)
 - A Tempo Moderato testnet account with a private key
 - SBC token deployed on Moderato
-- Some pathUSD in your account (available from the testnet faucet)
+- Some pathUSD in your account (available from the [testnet faucet](https://docs.tempo.xyz/quickstart/faucet?tab-1=fund-an-address))
 
 ## Setup
 
